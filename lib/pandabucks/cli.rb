@@ -15,17 +15,18 @@ module Pandabucks
     end
     
     def run
-      # binding.pry
+      Launcher.new(@options[:port], @options[:bind], @options[:resueaddre], @options[:backlog], @options[:config] || "./config.ru").run
     end
 
     private
     def setup_options
       # default config options
       @options = {
-        bind: "tcp://0.0.0.0",
+        bind: "0.0.0.0",
         port: 12300,
         backlog: 1024, #maybe too big?
-        resueaddre: true
+        resueaddre: true,
+        config: nil
       }
       @parser = OptionParser.new do |o|
         o.on "-v", "--version", "Print the version information" do
@@ -47,6 +48,10 @@ module Pandabucks
 
         o.on "--reuseaddr", "enable to restart pandabucks without wating timeout " do |arg|
           @options[:reuseaddr] = true
+        end
+
+        o.on "-c [VALUE]", "--config", "designate PATH of config.ru" do |arg|
+          @options[:config] = arg
         end
 
       end
