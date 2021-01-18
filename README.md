@@ -1,9 +1,9 @@
 # Pandabucks
 
-This is a toy ruby webserver based on rack.
-will be implement functions below
-- [ ] multithreading
-- [ ] non-blocking (maybe using I/O.select or anything else )
+This is a toy ruby webserver based on rack. 
+functions below will be implemented.
+- [ ] multithreading 
+- [ ] listen to unix domain socket
 
 
 ## Installation
