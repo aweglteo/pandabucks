@@ -4,4 +4,4 @@ require "pandabucks"
 require "pry"
 
 cli = Pandabucks::CLI.new ARGV
-# cli.run
+cli.run
