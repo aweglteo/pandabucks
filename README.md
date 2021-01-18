@@ -1,27 +1,10 @@
 # Pandabucks
 
-This is a toy ruby webserver based on rack. 
-functions below will be implemented.
-- [ ] multithreading 
+This is a ruby webserver with Ractor. 
+Supported ruby ​​version is 3.0.0.  
+
+- [ ] Parallel processing with Ractor 
 - [ ] listen to unix domain socket
-
-
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'pandabucks'
-```
-
-And then execute:
-
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install pandabucks
-
 
 ## Development
 
@@ -33,4 +16,3 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
