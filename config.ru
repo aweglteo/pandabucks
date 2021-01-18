@@ -1,4 +1,4 @@
-class ShowEnv
+class SampleApp
   def call(env)
     [ 200,
       { 'Content-Type' => 'text/html' },
@@ -7,4 +7,4 @@ class ShowEnv
   end
 end
 
-run ShowEnv.new
+run SampleApp.new
