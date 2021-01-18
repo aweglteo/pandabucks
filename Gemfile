@@ -5,3 +5,8 @@ gemspec
 
 gem "rake", "~> 12.0"
 gem "rspec", "~> 3.0"
+
+gem 'pry'
+gem 'pry-doc'
+gem 'pry-byebug'
+gem 'pry-stack_explorer'
