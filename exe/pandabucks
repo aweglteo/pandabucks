@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require "pandabucks"
-require "pry"
 
 cli = Pandabucks::CLI.new ARGV
 cli.run
